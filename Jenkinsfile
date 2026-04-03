@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/APalhade4/APalhade4-playwright-js-automation-framework.git'
+                checkout scm
             }
         }
 
