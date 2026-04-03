@@ -1,3 +1,7 @@
+
+# config.json file is required for the test execution and does not contain any sensitive information, 
+# so it is intentionally not added to .gitignore.
+
 # Logs
 logs
 *.log
@@ -137,3 +141,10 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
