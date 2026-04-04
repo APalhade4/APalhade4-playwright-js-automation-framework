@@ -1,4 +1,4 @@
-import { test } from '../fixtures/customFixture';
+import { test } from "../fixtures/customFixture";
 import { expect } from "@playwright/test";
 
 
