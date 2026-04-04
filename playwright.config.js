@@ -35,10 +35,23 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+
+    // Storage stage not supported for this app due to incorrect/minimum cookies
+    // { 
+    //   name: 'qe-setup',
+    //   testMatch: '**/auth.setup.spec.js',
+    //   use:{
+    //     baseURL: 'https://www.saucedemo.com/'
+    //   }
+    // },
+
     {
       name: 'QE-Chrome',
+      testIgnore: '**/auth.setup.spec.js',
       use: { ...devices['Desktop Chrome'],
         baseURL: 'https://www.saucedemo.com/',
+        screenshot: 'on',
+        viewport: { width: 1920, height: 1080 },
        },
     },
 
